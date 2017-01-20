@@ -1,21 +1,21 @@
 {
-  "name": "chroma-os-core",
+  "name": "chromaos-header-bar",
   "description": "AngularJS directives for ChromaOS.",
   "main": "Gruntfile.js",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "authors": [
     "Finn Winchester"
   ],
   "license": "MIT",
   "keywords": [
-    "clash",
-    "royale",
-    "button",
+    "chromaos",
+    "header",
+    "bar",
     "angular",
     "angularjs",
     "directive"
   ],
-  "homepage": "https://github.com/FinnWinchester/angular-clash-royale-button-directive",
+  "homepage": "https://github.com/FinnWinchester/ChromaOS-Header-bar",
   "ignore": [
     "**/.*",
     "node_modules",
