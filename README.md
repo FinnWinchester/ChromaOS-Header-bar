@@ -17,8 +17,8 @@ bower install chromaos-header-bar --save
 Include files in your `index.html`:
 
 ```
-<script src="bower_components/chromaos/dist/js/ChromaOSHeaderBar.min.js"></script>
-<link href="bower_components/chromaos/dist/css/ChromaOSHeaderBar.min.css" rel="stylesheet" />
+<script src="bower_components/chromaos-header-bar/dist/js/ChromaOSHeaderBar.min.js"></script>
+<link href="bower_components/chromaos-header-bar/dist/css/ChromaOSHeaderBar.min.css" rel="stylesheet" />
 ```
 
 Add `ChromaOSHeaderBar` to your AngularJS project:
