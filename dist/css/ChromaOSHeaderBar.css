@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+.chromaos-header-bar {
+  font-family: 'Roboto';
+  height: 35px;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 0 10px #3E3D40;
+  line-height: 35px;
+  padding-left: 5px;
+  padding-right: 5px;
+  position: relative;
+  background: #ecf0f1;
+  background: -moz-linear-gradient(bottom, #ecf0f1, #bdc3c7);
+  background: -webkit-linear-gradient(bottom, #ecf0f1, #bdc3c7);
+  background: linear-gradient(to bottom, #ecf0f1, #bdc3c7);
+  color: #3E3D40;
+}
+.chromaos-header-bar .open {
+  border-bottom-color: #2c3e50;
+}
+.chromaos-header-bar-icon {
+  float: left;
+  font-size: 20px;
+}
+.chromaos-header-bar-icon .dropdown-toggle.no-hover:hover {
+  cursor: default;
+}
+.chromaos-header-bar-title {
+  float: left;
+  margin-left: 5px;
+  font-weight: bold;
+}
+.chromaos-header-bar-menus-wrapper {
+  margin-left: 15px;
+  float: left;
+}
+.chromaos-header-bar-helpers-wrapper {
+  margin-right: 15px;
+  float: right;
+}
+.chromaos-header-bar-helpers-wrapper-helper {
+  float: left;
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.chromaos-header-bar-helpers-wrapper-helper.open,
+.chromaos-header-bar-helpers-wrapper-helper:hover {
+  height: 35px;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+}
+.chromaos-header-bar-helpers-wrapper-helper .dropdown-toggle:hover {
+  cursor: pointer;
+}
+.chromaos-header-bar-helpers-wrapper-helper .dropdown-menu {
+  position: absolute;
+  margin-top: 8px;
+}
+.chromaos-header-bar-helpers-wrapper-helper .dropdown-menu .dropdown-item {
+  padding: 0 0.5rem;
+}
+.chromaos-header-bar-helpers-wrapper-helper .dropdown-menu .dropdown-item:hover {
+  cursor: pointer;
+}
+.chromaos-header-bar-menu {
+  float: left;
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.chromaos-header-bar-menu.open:not(.chromaos-header-bar-main-menu),
+.chromaos-header-bar-menu:hover:not(.chromaos-header-bar-main-menu) {
+  height: 35px;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+}
+.chromaos-header-bar-menu .dropdown-toggle:hover {
+  cursor: pointer;
+}
+.chromaos-header-bar-menu .dropdown-menu {
+  position: absolute;
+  margin-top: 5px;
+}
+.chromaos-header-bar-menu .dropdown-menu .dropdown-item {
+  padding: 0 0.5rem;
+}
+.chromaos-header-bar-menu .dropdown-menu .dropdown-item:hover {
+  cursor: pointer;
+}
+.chromaos-header-bar-menu-special .dropdown-menu {
+  margin-top: 8px;
+}
+.no-caret::after {
+  content: none;
+}

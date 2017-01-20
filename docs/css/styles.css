@@ -1,0 +1,30 @@
+html, body {
+  /*background: #2AC5D6;
+  background: -webkit-linear-gradient(left, #2AC5D6 30%, #59D799 70%);
+  background: -o-linear-gradient(left, #2AC5D6 30%, #59D799 70%);
+  background: -moz-linear-gradient(left, #2AC5D6 30%, #59D799 70%);
+  background: linear-gradient(left, #2AC5D6 30%, #59D799 70%);*/
+  background-image: url('../imgs/bg-1.jpg');
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.right-click-me {
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  z-index: 0;
+}
+
+.right-click-me-content {
+  margin: 0 auto;
+}

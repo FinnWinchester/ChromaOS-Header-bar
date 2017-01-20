@@ -1,0 +1,40 @@
+<div class="chromaos-header-bar">
+	<div class="chromaos-header-bar-icon">
+		<div class="chromaos-header-bar-menu chromaos-header-bar-main-menu">
+			<div class="dropdown-toggle no-caret" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ng-class="{'no-hover': mainMenu.options.length === 0}">
+				<i class="{{systemMenu.icon}} fa-fw"></i>
+			</div>
+			<div class="dropdown-menu" ng-if="systemMenu.options.length > 0">
+				<div ng-repeat="option in systemMenu.options">
+					<h6 class="dropdown-header" ng-if="option.isHeader">{{option.title}}</h6>
+					<div class="dropdown-item" ng-if="!option.isDivider && !option.isHeader" ng-click="clickMenuOption(option);">
+						<span ng-bind-html="option.title | chromaosHeaderBarUnsafe"></span>
+					</div>
+					<div class="dropdown-divider" ng-if="option.isDivider"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="chromaos-header-bar-title">
+		<div class="chromaos-header-bar-menu chromaos-header-bar-menu-special">
+			<div class="dropdown-toggle no-caret" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ng-class="{'no-hover': mainMenu.options.length === 0}">
+				{{mainMenu.title}}
+			</div>
+			<div class="dropdown-menu">
+				<div ng-repeat="option in mainMenu.options">
+					<h6 class="dropdown-header" ng-if="option.isHeader">{{option.title}}</h6>
+					<div class="dropdown-item" ng-if="!option.isDivider && !option.isHeader" ng-click="clickMenuOption(option);">
+						<span ng-bind-html="option.title | chromaosHeaderBarUnsafe"></span>
+					</div>
+					<div class="dropdown-divider" ng-if="option.isDivider"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="chromaos-header-bar-menus">
+		<div chromaos-header-bar-menus menus="menus" ng-if="menus"></div>
+	</div>
+	<div class="chromaos-header-bar-helpers">
+		<div chromaos-header-bar-helpers helpers="helpers" ng-if="helpers"></div>
+	</div>
+</div>

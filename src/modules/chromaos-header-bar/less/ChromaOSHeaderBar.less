@@ -1,0 +1,133 @@
+@chromaos-header-bar-height: 35px;
+
+.chromaos-header-bar {
+	font-family: 'Roboto';
+	height: @chromaos-header-bar-height;
+	width: 100%;
+	top: 0;
+	z-index: 10;
+	box-shadow: 0 0 10px @flat-ui-black-hole;
+	line-height: @chromaos-header-bar-height;
+	padding-left: 5px;
+	padding-right: 5px;
+	position: relative;
+	.gradient-linear-background(bottom, @flat-ui-clouds, @flat-ui-silver);
+	color: @flat-ui-black-hole;
+
+	& .open {
+		border-bottom-color: @flat-ui-midnight-blue;
+	}
+
+	&-icon {
+		float: left;
+		font-size: 20px;
+
+		.dropdown-toggle {
+			&.no-hover {
+				&:hover {
+					cursor: default;
+				}
+			}
+		}
+	}
+
+	&-title {
+		float: left;
+		margin-left: 5px;
+		font-weight: bold;
+	}
+
+	&-menus {
+		&-wrapper {
+			margin-left: 15px;
+			float: left;
+		}
+	}
+
+	&-helpers {
+		&-wrapper {
+			margin-right: 15px;
+			float: right;
+
+			&-helper {
+				float: left;
+				position: relative;
+				padding-left: 10px;
+				padding-right: 10px;
+
+				&.open,
+				&:hover {
+					height: @chromaos-header-bar-height;
+					border-bottom-width: 3px;
+					border-bottom-style: solid;
+				}
+
+				.dropdown-toggle {
+					&:hover {
+						cursor: pointer;
+					}
+				}
+
+				.dropdown-menu {
+					position: absolute;
+					margin-top: 8px;
+
+					.dropdown-item {
+						padding: 0 0.5rem;
+
+						&:hover {
+							cursor: pointer;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.chromaos-header-bar-menu {
+	float: left;
+	position: relative;
+	padding-left: 10px;
+	padding-right: 10px;
+
+	&.open,
+	&:hover {
+		&:not(.chromaos-header-bar-main-menu) {
+			height: @chromaos-header-bar-height;
+			border-bottom-width: 3px;
+			border-bottom-style: solid;
+		}
+	}
+
+	.dropdown-toggle {
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	.dropdown-menu {
+		position: absolute;
+		margin-top: 5px;
+
+		.dropdown-item {
+			padding: 0 0.5rem;
+
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+.chromaos-header-bar-menu-special {
+	.dropdown-menu {
+		margin-top: 8px;
+	}
+}
+
+.no-caret {
+	&::after {
+		content: none;
+	}
+}

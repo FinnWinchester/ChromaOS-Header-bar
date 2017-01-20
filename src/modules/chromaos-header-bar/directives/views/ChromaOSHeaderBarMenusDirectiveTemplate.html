@@ -1,0 +1,16 @@
+<div class="chromaos-header-bar-menus-wrapper">
+	<div class="chromaos-header-bar-menu chromaos-header-bar-menu-special" ng-class="{'active': menu.isActive}" ng-repeat="menu in menus">
+		<div class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			{{menu.title}}
+		</div>
+		<div class="dropdown-menu">
+			<div ng-repeat="option in menu.options">
+				<h6 class="dropdown-header" ng-if="option.isHeader">{{option.title}}</h6>
+				<div class="dropdown-item" ng-if="!option.isDivider && !option.isHeader" ng-click="clickMenuOption(option);">
+					<span ng-bind-html="option.title | chromaosHeaderBarUnsafe"></span>
+				</div>
+				<div class="dropdown-divider" ng-if="option.isDivider"></div>
+			</div>
+		</div>
+	</div>
+</div>

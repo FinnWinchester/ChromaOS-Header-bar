@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+
+	<head>
+		<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="bower_components/tether/dist/js/tether.min.js"></script>
+		<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+		<script type="text/javascript" src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/ChromaOSHeaderBar.min.js"></script>
+		<script type="text/javascript" src="app/app.js"></script>
+		<script type="text/javascript" src="app/TestApp/TestAppDirective.js"></script>
+		<link rel="stylesheet" type="text/css" href="bower_components/components-font-awesome/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="bower_components/tether/dist/css/tether.min.css" />
+		<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="bower_components/jquery-ui/themes/base/jquery-ui.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/ChromaOSHeaderBar.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/styles.css" />
+	</head>
+
+	<body ng-controller="ChromaOSController">
+		<div chromaos-header-bar system-menu="systemMenu" main-menu="mainMenu" menus="menus" helpers="helpers" title="ChromaOS Header Bar"></div>
+
+		<button type="button" class="btn btn-lg btn-primary" ng-click="reicon();" style="margin-top: 40px;">Re Icon</button>
+		<button type="button" class="btn btn-lg btn-success" ng-click="retitle();" style="margin-top: 40px;">Re Title</button>
+		<button type="button" class="btn btn-lg btn-warning" ng-click="remenus();" style="margin-top: 40px;">Re Menus</button>
+		<button type="button" class="btn btn-lg btn-danger" ng-click="addmenu();" style="margin-top: 40px;">Add Menu</button>
+		<button type="button" class="btn btn-lg btn-default" ng-click="remainmenu();" style="margin-top: 40px;">Re Main Menu</button>
+	</body>
+
+</html>

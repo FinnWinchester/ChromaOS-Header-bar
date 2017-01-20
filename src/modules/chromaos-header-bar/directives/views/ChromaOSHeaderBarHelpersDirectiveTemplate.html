@@ -1,0 +1,13 @@
+<div class="chromaos-header-bar-helpers-wrapper">
+	<div class="chromaos-header-bar-helpers-wrapper-helper" ng-repeat="helper in helpers">
+		<div class="dropdown-toggle no-caret" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" ng-if="helper.action" ng-click="helper.action();">
+			<i class="{{helper.icon}} fa-fw"></i>
+		</div>
+		<div class="dropdown-toggle no-caret" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" ng-if="!helper.action">
+			<i class="{{helper.icon}} fa-fw"></i>
+		</div>
+		<div class="dropdown-menu dropdown-menu-right" ng-if="!helper.action" ng-style="checkStyles(helper);" ng-class="{'keepAlive': helper.keepAlive}">
+			<div chromaos-header-bar-compiler tpl="helper.template"></div>
+		</div>
+	</div>
+</div>
