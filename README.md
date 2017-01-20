@@ -2,6 +2,8 @@
 
 ChromaOS Header Bar made for AngularJS by Finn Winchester.
 
+[Online test](https://finnwinchester.github.io/ChromaOS-Header-bar/).
+
 ## Installation
 
 Via Bower
